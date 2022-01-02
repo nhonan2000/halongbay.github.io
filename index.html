@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADVENTURE</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="logo">ADVENTURE</h1>
+        <ul class="nav-links">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Tours</a></li>
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">About</a></li>
+            <li class="ctn"><a href="#">Contact</a></li>
+        </ul>
+        <i class='bx bx-menu'></i>
+    </nav>
+    <header>
+        <div class="header-content">
+            <h2>Explore The Colorful World</h2>
+            <div class="line"></div>
+            <h1>A WONDERFUL GIFT</h1>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+    </header>  
+    
+    <section class="events">
+        <div class="title">
+            <h1>Upcoming Event</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="./img/img1.jpg" alt="">
+                <h4>Ha Long Bay Cruises</h4>
+                <p>Everything You Need to Know About Cruising in Halong Bay</p>
+                <a href="#" class="ctn">Learn</a>
+            </div>
+            <div class="col">
+                <img src="./img/img2.jpg" alt="">
+                <h4>Ha Long Bay Nightlife</h4>
+                <p>What to Do at Night in Ha Long Bay</p>
+                <a href="#" class="ctn">Learn</a>
+            </div>
+        </div>
+        
+    </section>
+    
+
+    <script>
+        const menuBtn= document.querySelector('.bx-menu')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script> 
+</body>
+</html>
